@@ -1,0 +1,4 @@
+matricula;nome;email
+2024001;Maria Silva;maria@email.com
+2024002;João Souza;joao@email.com25204708360028;Nathalia Yasmin Bastos Cardoso;nathalia.25204708360028@faeterj-rio.edu.br
+25204708360001;Robertinha Imaginário Fontes;robertinha@gmail.com
