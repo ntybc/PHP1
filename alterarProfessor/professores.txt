@@ -1,0 +1,3 @@
+1001;Nathalia Cardoso;12345678901;Rua das Flores, 120 - Centro
+1002;João Pedro;98765432100;Av. Brasil, 850 - Madureira
+1003;Guilherme Martins;45678912355;Rua do Catete, 45 - Catete
