@@ -54,3 +54,21 @@ O projeto utiliza:
 - Arquivo TXT
 
 Os dados cadastrados são armazenados no arquivo `alunos.txt`.
+
+### 💕 Alterar Professor
+
+Sistema em PHP para alteração dos dados de professores cadastrados em um arquivo `.txt`. O usuário escolhe o professor na listagem, o sistema carrega os dados atuais em um formulário e grava as mudanças no registro correspondente. Cada professor possui matrícula, nome, CPF e endereço. O projeto é composto por:
+
+- Listagem dos professores cadastrados, com botão de Alterar para cada registro
+- Tela de alteração, que carrega os dados do professor selecionado em um formulário, com a matrícula bloqueada para edição
+- Validação dos campos: nome e endereço obrigatórios e CPF com 11 números
+- Mensagem de sucesso ao voltar para a listagem depois de salvar
+
+O projeto utiliza:
+
+- PHP
+- HTML
+- CSS
+- Arquivo TXT
+
+Os dados dos professores são armazenados no arquivo `professores.txt`.
