@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Calculadora</title></head>
+<body>
+  <h1>Calculadora</h1>
+  <input type="number" id="a" placeholder="Primeiro número">
+  <select id="op">
+    <option value="+">+</option><option value="-">-</option>
+    <option value="*">×</option><option value="/">÷</option>
+  </select>
+  <input type="number" id="b" placeholder="Segundo número">
+  <button id="calcular">=</button>
+  <p>Resultado: <span id="resultado"></span></p>
+
+  <script>
+    document.getElementById('calcular').addEventListener('click', async () => {
+      const dados = {
+        a: document.getElementById('a').value,
+        b: document.getElementById('b').value,
+        op: document.getElementById('op').value
+      };
+      const resposta = await fetch('calc.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(dados)
+      });
+      const json = await resposta.json();
+      document.getElementById('resultado').textContent =
+        json.erro ? json.erro : json.resultado;
+    });
+  </script>
+</body>
+</html>
